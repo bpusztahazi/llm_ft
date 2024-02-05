@@ -1,0 +1,378 @@
+[
+    {
+        "prompt": " SET datanucleus.connectionPool.maxPoolSize=30;  ",
+        "completion": " SET datanucleus.connectionPool.maxPoolSize=10;"
+    },
+    {
+        "prompt": " SET datanucleus.connectionPoolingType=BONECP;  ",
+        "completion": " SET datanucleus.connectionPoolingType=HikariCP;"
+    },
+    {
+        "prompt": " SET hive.auto.convert.join.noconditionaltask.size=20971520;  ",
+        "completion": " SET hive.auto.convert.join.noconditionaltask.size=52428800;"
+    },
+    {
+        "prompt": " SET hive.auto.convert.sortmerge.join=TRUE;  ",
+        "completion": " SET hive.auto.convert.sortmerge.join=TRUE;"
+    },
+    {
+        "prompt": " SET hive.auto.convert.sortmerge.join.to.mapjoin=TRUE;  ",
+        "completion": " SET hive.auto.convert.sortmerge.join.to.mapjoin=TRUE;"
+    },
+    {
+        "prompt": " SET hive.cbo.enable=FALSE;  ",
+        "completion": " SET hive.cbo.enable=TRUE;"
+    },
+    {
+        "prompt": " SET hive.cbo.show.warnings=FALSE;  ",
+        "completion": " SET hive.cbo.show.warnings=TRUE;"
+    },
+    {
+        "prompt": " SET hive.compactor.worker.threads=0;  ",
+        "completion": " SET hive.compactor.worker.threads=5;"
+    },
+    {
+        "prompt": " SET hive.compute.query.using.stats=FALSE;  ",
+        "completion": " SET hive.compute.query.using.stats=TRUE;"
+    },
+    {
+        "prompt": " SET hive.default.fileformat.managed=None;  ",
+        "completion": " SET hive.default.fileformat.managed=ORC;"
+    },
+    {
+        "prompt": " SET hive.default.rcfile.serde=org.apache.hadoop.hive.serde2.columnar.ColumnarSerDe;  ",
+        "completion": " SET hive.default.rcfile.serde=org.apache.hadoop.hive.serde2.columnar.LazyBinaryColumnarSerDe;"
+    },
+    {
+        "prompt": " SET hive.driver.parallel.compilation=FALSE;  ",
+        "completion": " SET hive.driver.parallel.compilation=TRUE;"
+    },
+    {
+        "prompt": " SET hive.exec.dynamic.partition.mode=strict;  ",
+        "completion": " SET hive.exec.dynamic.partition.mode=nonstrict;"
+    },
+    {
+        "prompt": " SET hive.exec.max.dynamic.partitions=1000;  ",
+        "completion": " SET hive.exec.max.dynamic.partitions=5000;"
+    },
+    {
+        "prompt": " SET hive.exec.max.dynamic.partitions.pernode=100;  ",
+        "completion": " SET hive.exec.max.dynamic.partitions.pernode=2000;"
+    },
+    {
+        "prompt": " SET hive.exec.reducers.max=1099;  ",
+        "completion": " SET hive.exec.reducers.max=1009;"
+    },
+    {
+        "prompt": " SET hive.execution.engine=mr;  ",
+        "completion": " SET hive.execution.engine=tez;"
+    },
+    {
+        "prompt": " SET hive.fetch.task.conversion=minimal;  ",
+        "completion": " SET hive.fetch.task.conversion=more;"
+    },
+    {
+        "prompt": " SET hive.fetch.task.conversion.threshold=256MB;  ",
+        "completion": " SET hive.fetch.task.conversion.threshold=1GB;"
+    },
+    {
+        "prompt": " SET hive.hashtable.key.count.adjustment=1;  ",
+        "completion": " SET hive.hashtable.key.count.adjustment=0.99;"
+    },
+    {
+        "prompt": " SET hive.limit.optimize.enable=FALSE;  ",
+        "completion": " SET hive.limit.optimize.enable=TRUE;"
+    },
+    {
+        "prompt": " SET hive.limit.pushdown.memory.usage=0.1;  ",
+        "completion": " SET hive.limit.pushdown.memory.usage=0.04;"
+    },
+    {
+        "prompt": " SET hive.mapjoin.hybridgrace.hashtable=TRUE;  ",
+        "completion": " SET hive.mapjoin.hybridgrace.hashtable=FALSE;"
+    },
+    {
+        "prompt": " SET hive.mapred.reduce.tasks.speculative.execution=TRUE;  ",
+        "completion": " SET hive.mapred.reduce.tasks.speculative.execution=FALSE;"
+    },
+    {
+        "prompt": " SET hive.metastore.aggregate.stats.cache.enabled=TRUE;  ",
+        "completion": " SET hive.metastore.aggregate.stats.cache.enabled=FALSE;"
+    },
+    {
+        "prompt": " SET hive.metastore.disallow.incompatible.col.type.changes=FALSE;  ",
+        "completion": " SET hive.metastore.disallow.incompatible.col.type.changes=TRUE;"
+    },
+    {
+        "prompt": " SET hive.metastore.dml.events=FALSE;  ",
+        "completion": " SET hive.metastore.dml.events=TRUE;"
+    },
+    {
+        "prompt": " SET hive.metastore.event.message.factory=org.apache.hadoop.hive.metastore.messaging.json.ExtendedJSONMessageFactory;  ",
+        "completion": " SET hive.metastore.event.message.factory=org.apache.hadoop.hive.metastore.messaging.json.gzip.GzipJSONMessageEncoder;"
+    },
+    {
+        "prompt": " SET hive.metastore.uri.selection=SEQUENTIAL;  ",
+        "completion": " SET hive.metastore.uri.selection=RANDOM;"
+    },
+    {
+        "prompt": " SET hive.optimize.metadataonly=FALSE;  ",
+        "completion": " SET hive.optimize.metadataonly=TRUE;"
+    },
+    {
+        "prompt": " SET hive.optimize.point.lookup.min=31;  ",
+        "completion": " SET hive.optimize.point.lookup.min=2;"
+    },
+    {
+        "prompt": " SET hive.prewarm.numcontainers=10;  ",
+        "completion": " SET hive.prewarm.numcontainers=3;"
+    },
+    {
+        "prompt": " SET hive.security.command.whitelist=set,reset,dfs,add,list,delete,reload,compile;  ",
+        "completion": " SET hive.security.command.whitelist=set,reset,dfs,add,list,delete,reload,compile,llap;"
+    },
+    {
+        "prompt": " SET hive.server2.enable.doAs=TRUE;  ",
+        "completion": " SET hive.server2.enable.doAs=FALSE;"
+    },
+    {
+        "prompt": " SET hive.server2.idle.session.timeout=12 hours;  ",
+        "completion": " SET hive.server2.idle.session.timeout=24 hours;"
+    },
+    {
+        "prompt": " SET hive.server2.max.start.attempts=30;  ",
+        "completion": " SET hive.server2.max.start.attempts=5;"
+    },
+    {
+        "prompt": " SET hive.server2.parallel.ops.in.session=TRUE;  ",
+        "completion": " SET hive.server2.parallel.ops.in.session=FALSE;"
+    },
+    {
+        "prompt": " SET hive.server2.support.dynamic.service.discovery=FALSE;  ",
+        "completion": " SET hive.server2.support.dynamic.service.discovery=TRUE;"
+    },
+    {
+        "prompt": " SET hive.server2.tez.initialize.default.sessions=FALSE;  ",
+        "completion": " SET hive.server2.tez.initialize.default.sessions=TRUE;"
+    },
+    {
+        "prompt": " SET hive.server2.thrift.max.worker.threads=100;  ",
+        "completion": " SET hive.server2.thrift.max.worker.threads=500;"
+    },
+    {
+        "prompt": " SET hive.server2.thrift.resultset.max.fetch.size=1000;  ",
+        "completion": " SET hive.server2.thrift.resultset.max.fetch.size=10000;"
+    },
+    {
+        "prompt": " SET hive.service.metrics.file.location=/var/log/hive/metrics-hiveserver2/metrics.log;  ",
+        "completion": " SET hive.service.metrics.file.location=/var/log/hive/metrics-hiveserver2-hiveontez/metrics.log;"
+    },
+    {
+        "prompt": " SET hive.stats.column.autogather=FALSE;  ",
+        "completion": " SET hive.stats.column.autogather=TRUE;"
+    },
+    {
+        "prompt": " SET hive.stats.deserialization.factor=1;  ",
+        "completion": " SET hive.stats.deserialization.factor=10;"
+    },
+    {
+        "prompt": " SET hive.support.special.characters.tablename=FALSE;  ",
+        "completion": " SET hive.support.special.characters.tablename=TRUE;"
+    },
+    {
+        "prompt": " SET hive.tez.auto.reducer.parallelism=FALSE;  ",
+        "completion": " SET hive.tez.auto.reducer.parallelism=TRUE;"
+    },
+    {
+        "prompt": " SET hive.tez.bucket.pruning=FALSE;  ",
+        "completion": " SET hive.tez.bucket.pruning=TRUE;"
+    },
+    {
+        "prompt": " SET hive.tez.container.size=-1;  ",
+        "completion": " SET hive.tez.container.size=4096;"
+    },
+    {
+        "prompt": " SET hive.tez.exec.print.summary=FALSE;  ",
+        "completion": " SET hive.tez.exec.print.summary=TRUE;"
+    },
+    {
+        "prompt": " SET hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DummyTxnManager;  ",
+        "completion": " SET hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DbTxnManager;"
+    },
+    {
+        "prompt": " SET hive.vectorized.execution.mapjoin.minmax.enabled=FALSE;  ",
+        "completion": " SET hive.vectorized.execution.mapjoin.minmax.enabled=TRUE;"
+    },
+    {
+        "prompt": " SET hive.vectorized.execution.mapjoin.native.fast.hashtable.enabled=FALSE;  ",
+        "completion": " SET hive.vectorized.execution.mapjoin.native.fast.hashtable.enabled=TRUE;"
+    },
+    {
+        "prompt": " SET hive.vectorized.use.row.serde.deserialize=FALSE;  ",
+        "completion": " SET hive.vectorized.use.row.serde.deserialize=TRUE;"
+    },
+    {
+        "prompt": " CREATE TABLE department.employees (name STRING, salary INT);  ",
+        "completion": " CREATE TABLE `department`.`employees` (name STRING, salary INT);"
+    },
+    {
+        "prompt": " CREATE TABLE sales.products (product_name STRING, price DECIMAL(5,2));  ",
+        "completion": " CREATE TABLE `sales`.`products` (product_name STRING, price DECIMAL(5,2));"
+    },
+    {
+        "prompt": " CREATE TABLE school.students (student_id INT, grade STRING);  ",
+        "completion": " CREATE TABLE `school`.`students` (student_id INT, grade STRING);"
+    },
+    {
+        "prompt": " CREATE TABLE hr.employees (emp_name STRING, position STRING, salary INT);  ",
+        "completion": " CREATE TABLE `hr`.`employees` (emp_name STRING, position STRING, salary INT);"
+    },
+    {
+        "prompt": " CREATE TABLE finance.accounts (account_number INT, balance DECIMAL(10,2));  ",
+        "completion": " CREATE TABLE `finance`.`accounts` (account_number INT, balance DECIMAL(10,2));"
+    },
+    {
+        "prompt": " CREATE TABLE marketing.clients (client_name STRING, contact_email STRING);  ",
+        "completion": " CREATE TABLE `marketing`.`clients` (client_name STRING, contact_email STRING);"
+    },
+    {
+        "prompt": " CREATE TABLE research.projects (project_id INT, project_name STRING);  ",
+        "completion": " CREATE TABLE `research`.`projects` (project_id INT, project_name STRING);"
+    },
+    {
+        "prompt": " CREATE TABLE inventory.products (product_code INT, quantity INT);  ",
+        "completion": " CREATE TABLE `inventory`.`products` (product_code INT, quantity INT);"
+    },
+    {
+        "prompt": " CREATE TABLE engineering.employees (engineer_name STRING, experience INT);  ",
+        "completion": " CREATE TABLE `engineering`.`employees` (engineer_name STRING, experience INT);"
+    },
+    {
+        "prompt": " CREATE TABLE logistics.shipments (shipment_id INT, destination STRING);  ",
+        "completion": " CREATE TABLE `logistics`.`shipments` (shipment_id INT, destination STRING);"
+    },
+    {
+        "prompt": " CREATE EXTERNAL TABLE hive2_external_table (name string, age int) ROW FORMAT SERDE 'com.mytables.MySerDe' WITH SERDEPROPERTIES ( \"input.regex\" = \"*.csv\") LOCATION '/warehouse/tablespace/external/hive/marketing';  ",
+        "completion": " CREATE EXTERNAL TABLE hive3_external_table (name string, age int) ROW FORMAT SERDE 'com.mytables.MySerDe'  WITH SERDEPROPERTIES ( \"input.regex\" = \"*.csv\") LOCATION '/warehouse/tablespace/external/hive/marketing';"
+    },
+    {
+        "prompt": " CREATE TABLE hive2_managed_table (id int, city string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LOCATION '/warehouse/tablespace/managed/hive/cities';  ",
+        "completion": " CREATE TABLE hive3_managed_table (id int, city string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' MANAGEDLOCATION '/warehouse/tablespace/managed/hive/cities';"
+    },
+    {
+        "prompt": " ALTER TABLE my_table DROP PARTITION (date='2022-01-01') CASCADE OFFLINE NO_DROP;  ",
+        "completion": " ALTER TABLE my_table DROP PARTITION (date='2022-01-01') CASCADE;"
+    },
+    {
+        "prompt": " SELECT name, age FROM application SELECT name, age FROM `application`  ",
+        "completion": " SELECT id, name, greatest(salary, bonus) FROM employee SELECT id, name, greatest(nvl(salary, default_salary), nvl(bonus, default_bonus)) FROM employee"
+    },
+    {
+        "prompt": " TRUNCATE TABLE external_table;  ",
+        "completion": " ALTER TABLE external_table SET TBLPROPERTIES ('external.table.purge'='true');"
+    },
+    {
+        "prompt": " SELECT * FROM db.t1 5d;  ",
+        "completion": " SELECT * FROM db.t1 5d;"
+    },
+    {
+        "prompt": " SET hive.stats.collect.rawdatasize=true; create table example_table (id int, name string); analyze table example_table compute statistics;  ",
+        "completion": " create table example_table (id int, name string); analyze table example_table compute statistics;"
+    },
+    {
+        "prompt": " SET hive.limit.query.max.table.partition=100; select * from example_table;  ",
+        "completion": " set hive.metastore.limit.partition.request=100; select * from example_table;"
+    },
+    {
+        "prompt": " SELECT 123.000;  ",
+        "completion": " SELECT CAST(123.000 AS DECIMAL);"
+    },
+    {
+        "prompt": " SELECT 123.000;  ",
+        "completion": " SELECT 123;"
+    },
+    {
+        "prompt": " Select cast('123.000' as string);  ",
+        "completion": " select cast('123.000' as string);"
+    },
+    {
+        "prompt": " Select length(abs('123.000'));  ",
+        "completion": " select length(cast(abs('123.000') as char(10)));"
+    },
+    {
+        "prompt": " CREATE EXTERNAL TABLE t(a TINYINT, b SMALLINT NOT NULL ENABLE, c INT);  ",
+        "completion": " CREATE EXTERNAL TABLE t(a TINYINT, b SMALLINT, c INT);"
+    },
+    {
+        "prompt": " Select unix_timestamp('2024-12-30 59:10:20', \"yyyy-MM-dd hh:mm:ss\"), from_utc_timestamp(from_unixtime(unix_timestamp('2024-12-30 59:10:20', \"yyyy-MM-dd hh:mm:ss\"),'yyyy-MM-dd HH:mm:ss'), 'CST'), from_utc_timestamp(from_unixtime(unix_timestamp('2024-12-30 T59:10:20.192+0000', \"yyyy-MM-dd'T'hh:mm:ss.SSS'+0000'\"),'yyyy-MM-dd HH:mm:ss'), 'CST')  ;  ",
+        "completion": " select unix_timestamp('2024-12-30 59:10:20', \"yyyy-MM-dd HH:mm:ss.SSS\"), from_utc_timestamp(from_unixtime(unix_timestamp('2024-12-30 59:10:20', \"yyyy-MM-dd HH:mm:ss.SSS\"),'yyyy-MM-dd HH:mm:ss'), 'CST'), from_utc_timestamp(from_unixtime(unix_timestamp('2024-12-30 T59:10:20.192+0000', \"yyyy-MM-dd'T'HH:mm:ss.SSS'+0000'\"),'yyyy-MM-dd HH:mm:ss'), 'CST')  ;"
+    },
+    {
+        "prompt": " Select unix_timestamp('12-12-2023 15:30:12.075','MM-dd-yyyy HH:mm:ss');  ",
+        "completion": " select unix_timestamp('12-12-2023 15:30:12.075','MM-dd-yyyy HH:mm:ss.SSS');"
+    },
+    {
+        "prompt": " Select cast(unix_timestamp('2023-04-03:10:10:00', 'yyyyMM') as string);  ",
+        "completion": " select cast(unix_timestamp('2023-04-03:10:10:00', 'yyyyMM') as string);"
+    },
+    {
+        "prompt": " Select unix_timestamp('11-11-2020 15:30:12.084','MM-dd-yyyy HH:mm:ss.SSS');  ",
+        "completion": " select unix_timestamp('11-11-2020 15:30:12.084','MM-dd-yyyy HH:mm:ss.SSS');"
+    },
+    {
+        "prompt": " SET hive.local.time.zone=Asia/Bangkok;  ",
+        "completion": " set hive.local.time.zone=Asia/Bangkok;"
+    },
+    {
+        "prompt": " SELECT FROM_UNIXTIME(UNIX_TIMESTAMP('2000-01-07 00:00:00 GMT','yyyy-MM-dd HH:mm:ss z'));  ",
+        "completion": " -- No action required, as HIVE-18595 fixed the issue in CDP."
+    },
+    {
+        "prompt": " SET hive.execution.engine=spark;  ",
+        "completion": " -- Remove the Hive on Spark configuration from your scripts."
+    },
+    {
+        "prompt": " -- No specific query in Hive 2, as partition values are not type checked by default in CDH 5.x.  ",
+        "completion": " -- Disable partition type checking in Hive 3."
+    },
+    {
+        "prompt": "  ",
+        "completion": " SET hive.typecheck.on.insert=false;"
+    },
+    {
+        "prompt": " SELECT col1, col2 FROM database.table WHERE col3 = 1;  ",
+        "completion": " SELECT col1, col2 FROM `database`.`table` WHERE col3 = 1;"
+    },
+    {
+        "prompt": " SELECT col1, col2 FROM database.table WHERE col3 = 1;  ",
+        "completion": " SELECT col1, col2 FROM `database`.`table` WHERE col3 = 1;"
+    },
+    {
+        "prompt": " CREATE TABLE math.students (name VARCHAR(64), age INT, gpa DECIMAL(3,2));  ",
+        "completion": " CREATE TABLE `math`.`students` (name VARCHAR(64), age INT, gpa DECIMAL(3,2));"
+    },
+    {
+        "prompt": " CREATE TABLE my_table (id INT, name STRING) LOCATION '/apps/hive/warehouse/my_table';  ",
+        "completion": " CREATE TABLE my_table (id INT, name STRING) LOCATION '/warehouse/tablespace/external/hive/my_table';"
+    },
+    {
+        "prompt": " CREATE EXTERNAL TABLE my_external_table (a STRING, b STRING)  ROW FORMAT SERDE 'com.mytables.MySerDe' WITH SERDEPROPERTIES ( \"input.regex\" = \"*.csv\") LOCATION '/warehouse/tablespace/external/hive/marketing';  ",
+        "completion": " CREATE EXTERNAL TABLE my_external_table (a STRING, b STRING) ROW FORMAT SERDE 'com.mytables.MySerDe'  WITH SERDEPROPERTIES ( \"input.regex\" = \"*.csv\");"
+    },
+    {
+        "prompt": " CREATE DATABASE IF NOT EXISTS my_database LOCATION '/apps/hive/warehouse/my_database'  WITH DBPROPERTIES ('owner'='user', 'created_at'='2024-01-29');  ",
+        "completion": " CREATE DATABASE IF NOT EXISTS my_database LOCATION '/warehouse/tablespace/external/hive/my_database' MANAGEDLOCATION '/warehouse/tablespace/managed/hive/my_database' WITH DBPROPERTIES ('owner'='user', 'created_at'='2024-01-29');"
+    },
+    {
+        "prompt": " TRUNCATE TABLE my_external_table;  ",
+        "completion": " ALTER TABLE my_external_table SET TBLPROPERTIES ('external.table.purge'='true');"
+    },
+    {
+        "prompt": " SET hive.stats.collect.rawdatasize=true;  ",
+        "completion": " -- Removal of hive.stats.collect.rawdatasize property in Hive 2.1.0 (HIVE-13564)."
+    },
+    {
+        "prompt": " SET hive.limit.query.max.table.partition=100;  ",
+        "completion": " -- Removal of support for hive.limit.query.max.table.partition in Hive 3.x (HIVE-17965)."
+    }
+]
