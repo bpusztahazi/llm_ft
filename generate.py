@@ -1,6 +1,17 @@
 import torch
+import argparse
 from peft import AutoPeftModelForCausalLM
 from transformers import AutoTokenizer, AutoModelForCausalLM
+
+
+# Initialize parser
+parser = argparse.ArgumentParser()
+ 
+# Adding optional argument
+parser.add_argument("-q", "--Query", help = "Query")
+ 
+# Read arguments from command line
+args = parser.parse_args()
 
 DEV = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -23,7 +34,7 @@ model = AutoPeftModelForCausalLM.from_pretrained(
 tokenizer = AutoTokenizer.from_pretrained(adapter_path)
 # tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-inputs = tokenizer.encode("An AI tool that converts a Hive 2 sql query delimited by triple backticks to Hive 3.\n### Input: ```here is how write for loop in js```\n### Output:", return_tensors="pt").to(DEV)
+inputs = tokenizer.encode("An AI tool that converts a Hive 2 sql query delimited by triple backticks to Hive 3.\n### Input: ```" + args.Query + "```\n### Output:", return_tensors="pt").to(DEV)
 
 generate_kwargs = dict(
     input_ids=inputs,
